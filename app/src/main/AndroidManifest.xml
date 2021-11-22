@@ -1,45 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.evidencia2.ea2tallerpractico">
+    package="com.ods.autoscolombia">
 
     <application
-        android:name="com.orm.SugarApp"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EA2TallerPractico">
+        android:theme="@style/Theme.AutosColombia">
         <activity
-            android:name=".Registro"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-
-        <meta-data
-            android:name="DATABASE"
-            android:value="taxidb.db" />
-        <meta-data
-            android:name="VERSION"
-            android:value="1" />
-        <meta-data
-            android:name="QUERY_LOG"
-            android:value="true" />
-        <meta-data
-            android:name="DOMAIN_PACKAGE_NAME"
-            android:value="com.evidencia2.ea2tallerpractico" />
-
+            android:name=".Pagos"
+            android:exported="false" />
         <activity
-            android:name=".menu"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:name=".Ingresos"
+            android:exported="false" />
         <activity
-            android:name=".login"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:name=".ContratarCelda"
+            android:exported="false" />
+        <activity
+            android:name=".Vehiculos"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Propietario"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

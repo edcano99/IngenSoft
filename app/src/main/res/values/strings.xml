@@ -1,20 +1,3 @@
 <resources>
-    <string name="app_name">EA2TallerPractico</string>
-    <string name="txtUsuario">Usuario</string>
-    <string name="txtPassword">Contraseña</string>
-    <string name="btnIngresar">Ingresar</string>
-    <string name="btnRegistrar">Registrarse</string>
-    <string name="btnnuevo">Nuevo Vehículo</string>
-    <string name="btnlistar">Listar Vehículos</string>
-    <string name="btnmodificar">Nuevo Cliente</string>
-    <string name="btneliminar">Ingreso</string>
-    <string name="btnsalir">Salida</string>
-    <string name="txtIdVehiculo">Ingrese Id del Vehículo</string>
-    <string name="txtPlaca">Ingrese la Placa</string>
-    <string name="txtMarca">Ingrese la Marca</string>
-    <string name="txtModelo">Ingrese el Modelo</string>
-    <string name="txtanio">Ingrese el Año</string>
-    <string name="txtColor">Ingrese el Color</string>
-    <string name="txtcelda">Ingrece el Nro de Celda</string>
-
+    <string name="app_name">AutosColombia</string>
 </resources>
