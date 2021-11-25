@@ -3,10 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.19791666666666666" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1828125" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_registro.xml" value="0.22" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_propietario.xml" value="0.1683760683760684" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_vehiculos.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -15,12 +14,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.19791666666666666" />
-      </ProjectState>
-    </option>
   </component>
 </project>

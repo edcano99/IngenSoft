@@ -29,7 +29,7 @@
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <EditText
         android:id="@+id/txt_contrato_modelo"
@@ -70,7 +70,7 @@
         app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <EditText
         android:id="@+id/txt_contrato_color"
@@ -110,8 +110,10 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
     <EditText
         android:id="@+id/txt_contrato_observaciones"
@@ -119,8 +121,12 @@
         android:layout_height="120sp"
         android:hint="OBSERVACIONES"
         android:textAlignment="textStart"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="409dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_contrato_propietario"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_contrato_crear"
@@ -129,10 +135,10 @@
         android:text="CREAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.692" />
 
     <Button
         android:id="@+id/btn_contrato_editar"
@@ -142,10 +148,10 @@
         android:text="EDITAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toEndOf="@+id/btn_contrato_crear"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.692" />
 
     <Button
         android:id="@+id/btn_vehiculos_listar"
@@ -154,9 +160,18 @@
         android:text="LISTAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toEndOf="@+id/btn_contrato_editar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintVertical_bias="0.692" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATRAS"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="547dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
