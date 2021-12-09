@@ -7,12 +7,67 @@
     tools:context=".Ingresos">
 
     <TextView
+        android:id="@+id/textView8"
+        android:layout_width="150dp"
+        android:layout_height="21dp"
+        android:text="Celda Asignada"
+        android:textAlignment="inherit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="150dp"
+        android:layout_height="21dp"
+        android:text="Pago mensualidad"
+        android:textAlignment="inherit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/observaciones"
+        android:layout_width="150dp"
+        android:layout_height="21dp"
+        android:text="Observaciones"
+        android:textAlignment="inherit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <EditText
+        android:id="@+id/txt_ingresos_pago"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:hint="Mensualidad"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INGRESOS"
+        android:text="INGRESOS / SALIDAS"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,133 +77,147 @@
 
     <EditText
         android:id="@+id/txt_ingresos_placa"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:hint="PLACA"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:hint="Placa"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.176" />
 
     <EditText
-        android:id="@+id/txt_ingresos_modelo"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="MODELO"
+        android:id="@+id/txt_ingresos_idpropietario"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:hint="Propietario"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toEndOf="@+id/txt_ingresos_placa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <EditText
+        android:id="@+id/txt_ingresos_nombre"
+        android:layout_width="175sp"
+        android:layout_height="42sp"
+        android:hint="Nombres"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ingresos_placa"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <EditText
-        android:id="@+id/txt_ingresos_ano"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="AÑO"
-        android:textAlignment="center"
+        android:id="@+id/txt_ingresos_observaciones"
+        android:layout_width="300dp"
+        android:layout_height="101dp"
+        android:textAlignment="inherit"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ingresos_modelo"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/txt_ingresos_marca"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:hint="MARCA"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.646" />
 
     <EditText
-        android:id="@+id/txt_ingresos_color"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
-        android:hint="COLOR"
+        android:id="@+id/txt_ingresos_tele"
+        android:layout_width="175sp"
+        android:layout_height="42sp"
+        android:hint="Telefono"
         android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toEndOf="@+id/txt_ingresos_modelo"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ingresos_marca"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/txt_ingresos_matricula"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
-        android:hint="MATRICULA"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toEndOf="@+id/txt_ingresos_ano"
-        app:layout_constraintTop_toBottomOf="@+id/txt_ingresos_color"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/txt_ingresos_propietario"
-        android:layout_width="280sp"
-        android:layout_height="wrap_content"
-        android:hint="PROPIETARIO"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresos_idpropietario"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/txt_ingresos_celda"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:hint="Celda"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
 
     <Button
-        android:id="@+id/btn_ingresos_crear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CREAR"
+        android:id="@+id/btn_ingresos_pagos"
+        android:layout_width="125sp"
+        android:layout_height="45sp"
+        android:onClick="irPagos"
+        android:text="PAGOS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/btn_ingresos_salida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/btn_ingresos_guardar"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:onClick="GuardarCelda"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.744" />
 
     <Button
-        android:id="@+id/btn_ingresos_editar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:text="EDITAR"
+        android:id="@+id/btn_ingresos_consultar"
+        android:layout_width="125sp"
+        android:layout_height="45sp"
+        android:onClick="ConsultarVehiculo"
+        android:text="CONSULTAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_ingresos_crear"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/btn_ingresos_guardar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.743" />
 
     <Button
-        android:id="@+id/btn_ingresos_listar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LISTAR"
+        android:id="@+id/btn_ingresos_salida"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:onClick="salidaIngreso"
+        android:text="SALIDA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_ingresos_editar"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.823" />
+
+    <Button
+        android:id="@+id/btn_vehiculos_atras2"
+        android:layout_width="125sp"
+        android:layout_height="45sp"
+        android:onClick="irAtrasVehiculo"
+        android:text="ATRAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

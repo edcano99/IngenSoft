@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.ods.autoscolombia.entidades.Celdas;
+
 public class Menu extends AppCompatActivity {
 
     Button btnVehiculo,btnContratar, btnPagos, btnPropietario, btnIngreso;
@@ -17,7 +19,7 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         btnVehiculo=findViewById(R.id.btn_menu_vehic);
-        btnContratar=findViewById(R.id.btn_menu_contratar);
+        btnContratar=findViewById(R.id.btn_menu_celdas);
         btnPagos=findViewById(R.id.btn_menu_pagos);
         btnPropietario=findViewById(R.id.btn_menu_propietario);
         btnIngreso=findViewById(R.id.btn_menu_ingreso);
@@ -34,9 +36,9 @@ public class Menu extends AppCompatActivity {
         startActivity(intentIrPropietario);
     }
 
-    public void irContratar(View view){
-        Intent intentIrContratar = new Intent(this,ContratarCelda.class);
-        startActivity(intentIrContratar);
+    public void irCeldas(View view){
+        Intent intentIrCeldas = new Intent(this, Celdas.class);
+        startActivity(intentIrCeldas);
     }
 
     public void irIngreso(View view){

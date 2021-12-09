@@ -47,13 +47,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/btn_menu_contratar"
+        android:id="@+id/btn_menu_celdas"
         android:layout_width="140sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="48dp"
-        android:onClick="irContratar"
-        android:text="Contratar Celda"
+        android:onClick="irCeldas"
+        android:text="Gestion de Celdas"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_menu_propietario"
@@ -74,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_menu_contratar"
+        app:layout_constraintStart_toEndOf="@+id/btn_menu_celdas"
         app:layout_constraintTop_toTopOf="@+id/btn_menu_propietario"
         app:layout_constraintVertical_bias="0.029" />
 
@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_menu_contratar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu_celdas"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

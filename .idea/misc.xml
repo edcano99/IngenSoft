@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_celdas.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_ingresos.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_main.xml" value="0.1683760683760684" />
         <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_pagos.xml" value="0.30085470085470084" />
         <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_propietario.xml" value="0.1683760683760684" />
         <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/activity_vehiculos.xml" value="0.33" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/item_celdas_tabla.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/ANDRES GOMEZ/Documents/Andrea/#Raíz/Users/ANDREA/Documents/Tecnologia Software/6 Semestre/Ing Software/AutosColombia (1)/AutosColombia/app/src/main/res/layout/item_pagos_tabla.xml" value="0.30085470085470084" />
       </map>
     </option>
   </component>

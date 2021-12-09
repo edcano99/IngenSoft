@@ -44,6 +44,8 @@ public class Vehiculos extends AppCompatActivity {
 
     }
 
+
+
     public void metodoCrear(View view){
 
         DbVehiculo dbVehiculos = new DbVehiculo(this, "parqueadero", null, 1);

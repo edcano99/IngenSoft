@@ -5,11 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Pagos">
+
+    <Button
+        android:id="@+id/btn_pagos_atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="irAtrasVehiculo"
+        android:text="ATRAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PAGOS"
+        android:text="GESTION PAGOS"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,136 +32,52 @@
         app:layout_constraintVertical_bias="0.023"
         tools:layout_editor_absoluteX="0dp" />
 
-    <EditText
-        android:id="@+id/txt_pagos_placa"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:hint="PLACA"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TableLayout
+        android:id="@+id/tb_pagos"
+        android:layout_width="357dp"
+        android:layout_height="294dp"
+        android:layout_marginTop="136dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/txt_pagos_modelo"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="MODELO"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_pagos_placa"
-        app:layout_constraintVertical_bias="0.0" />
+        <!--        <TableRow-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
 
-    <EditText
-        android:id="@+id/txt_pagos_ano"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="AÑO"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_pagos_modelo"
-        app:layout_constraintVertical_bias="0.0" />
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:text="Id" />-->
 
-    <EditText
-        android:id="@+id/txt_pagos_marca"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:hint="MARCA"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:text="Detalle" />-->
 
-    <EditText
-        android:id="@+id/txt_pagos_color"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
-        android:hint="COLOR"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toEndOf="@+id/txt_pagos_modelo"
-        app:layout_constraintTop_toBottomOf="@+id/txt_pagos_marca"
-        app:layout_constraintVertical_bias="0.0" />
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:text="Disponible" />-->
+        <!--        </TableRow>-->
 
-    <EditText
-        android:id="@+id/txt_pagos_matricula"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
-        android:hint="MATRICULA"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toEndOf="@+id/txt_pagos_ano"
-        app:layout_constraintTop_toBottomOf="@+id/txt_pagos_color"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/txt_pagos_propietario"
-        android:layout_width="280sp"
-        android:layout_height="wrap_content"
-        android:hint="PROPIETARIO"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
-
-    <EditText
-        android:id="@+id/txt_pagos_observaciones"
-        android:layout_width="280sp"
-        android:layout_height="120sp"
-        android:hint="OBSERVACIONES"
-        android:textAlignment="textStart"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="339dp" />
+    </TableLayout>
 
     <Button
-        android:id="@+id/btn_pagos_pagar"
-        android:layout_width="140sp"
+        android:id="@+id/btn_pagos_cargar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="pagar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="464dp"
+        android:onClick="llenarTabla"
+        android:text="Cargar Tabla"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
-
-    <Button
-        android:id="@+id/btn_pagos_anular"
-        android:layout_width="140sp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:text="ANULAR PAGO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toEndOf="@+id/btn_pagos_pagar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
